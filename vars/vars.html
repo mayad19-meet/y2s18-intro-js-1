@@ -11,12 +11,16 @@
     <script>
     	var birthyear=parsInt(prompt("what year were you born?"))
     	var luckynum=parsInt(prompt("what is your lucky number?"))
-    	var favfruit=parsInt(prompt("what is your favorite fruit?"))
-    	var favsub=parsInt(prompt("what is your favorite subject?"))
+    	var favfruit=prompt("what is your favorite fruit?")
+    	var favsub=prompt("what is your favorite subject?")
     	document.write(birthyear%luckynum)
-    	document.write(birthyear-luckynum)
+    	document.write("<br>")
+    	document.write(birthyear+luckynum)
+    	document.write("<br>")
     	document.write(birthyear.toString()+favsub)
+    	document.write("<br>")
     	document.write(favfruit+birthyear.toString()+luckynum.toString())
+    	document.write("<br>")
     	document.write(birthyear.toString()+luckynum.toString()+favsub)
     </script>
 </body>
