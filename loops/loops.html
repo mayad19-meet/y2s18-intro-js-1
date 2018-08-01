@@ -12,14 +12,35 @@
 /* STARTING CODE */
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * Math.floor(max - min)) + min;
+
 }
 
+	
+var guess = 101;
 var randomInt = getRandomInt(1, 100);
-/* END STARTING CODE */
+var count=0
+while (guess!=randomInt){
 
-// your code goes under here
+guess=prompt("guess a number!!")
+
+if (guess>randomInt){
+	alert("you guessed too high!")
+}
+else if(guess<randomInt){
+	alert("you guessed to low!")
+}	
+else { alert("you guessed correctly!!")
+	
+}
+
+}
+
+
+
+
 
     </script>
+
 </body>
 
 </html>
